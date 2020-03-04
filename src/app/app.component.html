@@ -1,2 +1,4 @@
-      <button (click)="toggle()" style="cursor: pointer;"aria-label="Example delete icon">toggle</button>
-      <input [@openClose]="isOpen ? 'open' : 'closed'" class="open-close-container" placeholder=""/>
+      Click to toggle the animation : <button (click)="toggle()" style="cursor: pointer;"aria-label="Example delete icon">
+        {{isOpen? 'Hide input' : 'Display input'}}
+      </button>
+      <input style="margin-left:10px" [@openClose]="isOpen ? 'open' : 'closed'" class="open-close-container" placeholder=""/>
